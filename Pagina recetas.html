@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.03);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            padding: 1rem;
+        }
+
+        .recipe-content h3 {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe-content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-content a {
+            display: inline-block;
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .recipe-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        /* Botón volver */
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto 0 auto;
+            padding: 0.5rem 1.5rem;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e6584f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Recetas de Cocina Minimalista
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Recetas</a>
+    </nav>
+    <main>
+        <div class="container">
+            <!-- Tarjeta de receta 1 -->
+            <div class="recipe-card">
+                <img src="images/Pasta_al_pesto.jpg" alt="Receta 1">
+                <div class="recipe-content">
+                    <h3>Pasta al Pesto</h3>
+                    <p>Una receta deliciosa y sencilla de pasta al pesto casero.</p>
+                    <a href="receta-pasta.html">Ver receta</a>
+                </div>
+            </div>
+            <!-- Tarjeta de receta 2 -->
+            <div class="recipe-card">
+                <img src="images/Ensalada_cesar.jpg" alt="Receta 2">
+                <div class="recipe-content">
+                    <h3>Ensalada César</h3>
+                    <p>Refrescante y deliciosa ensalada césar con aderezo casero.</p>
+                    <a href="#">Ver receta</a>
+                </div>
+            </div>
+            <!-- Tarjeta de receta 3 -->
+            <div class="recipe-card">
+                <img src="images/Sopa_de_tomate.jpg" alt="Receta 3">
+                <div class="recipe-content">
+                    <h3>Sopa de Tomate</h3>
+                    <p>Una receta reconfortante y clásica de sopa de tomate.</p>
+                    <a href="#">Ver receta</a>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">Volver a Inicio</a>
+    </main>
+    <footer>
+        &copy; 2024 Recetas de Cocina. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
